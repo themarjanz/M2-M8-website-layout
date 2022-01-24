@@ -20,7 +20,8 @@
             border: 2px solid goldenrod;
             border-radius: 10px;
             position: relative;
-            /* margin: 15px; */
+            overflow: hidden;
+            margin: 10px;
         }
 
         .photo img {
@@ -44,7 +45,14 @@
 
         .photo-frame:hover .photo-detail {
             display: block;
-            background-color: rgba(226, 200, 133, 0.7);
+            background-color: rgba(233, 248, 193, 0.7);
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.5) rotate(360deg);
+            /* transform: scale(1.5) skew(30deg); */
+            transition: transform 2s ease-in-out;
+
         }
     </style>
 </head>
